@@ -1,0 +1,111 @@
+.request {
+    min-height: 78vh;
+    margin-bottom: 80px;
+}
+.projectSearch {
+    position: relative;
+    width: 80%;
+    max-width: 1470px;
+    margin: 0 auto;
+    margin-top: 20px;
+    > svg {
+        position: absolute;
+        left: 8px;
+        top: 8px;
+    }
+    > input {
+        border: 1px solid #c3c9d4;
+        padding: 6px 8px 6px 40px;
+        border-radius: 4px;
+        background-color: white;
+        color: #31363d;
+        font-size: 13px;
+        font-weight: 600;
+        width: 310px;
+        transition: 0.3s;
+        outline: none;
+        &:focus {
+            padding: 5px 7px 5px 39px;
+            border: 2px solid #1991eb;
+            box-shadow: 0 0 5px #1991eb;
+        }
+    }
+}
+.requestItem {
+    width: 80%;
+    max-width: 1470px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    margin-top: 50px;
+    border: 1px dashed #dde1e7;
+    padding: 10px;
+    border-radius: 4px;
+    > div {
+            width: 100%;
+           display: flex;
+           flex-direction: column;
+        //    width: 65%;
+           > button {
+                margin-top: 40px;
+                // align-self: flex-end;
+                width: 220px;
+            }
+        }
+}
+.connects {
+    margin-top: 20px;
+    width: 100%;
+    border: 1px dashed #dde1e7;
+    padding: 20px;
+    border-radius: 4px;
+    background: #eff4fd;
+}
+.requestItemInfo {
+    > div {
+        display: flex;
+        align-items: center;
+        margin-top: 10px;
+        > p {
+            color: #7f8fa4;
+            font-weight: bold;
+            font-size: 14px;
+            margin: 0;
+            margin-left: 20px;
+        }
+        > span {
+            font-size: 18px;
+            font-weight: 600;
+            color: #48555e;
+        }
+    }
+}
+
+.fullContent {
+    margin-top: 40px;
+}
+@media only screen and (max-width: 620px) {
+    .equipmentItem {
+        flex-direction: column;
+        > div {
+            width: 100% !important;
+        }
+        .img {
+            display: flex;
+            align-items: center;
+            > img {
+                max-width: 100%;
+            }
+        }
+    }
+}
+@media only screen and (max-width: 620px) {
+    .equipmentItem {
+        > div {
+            > button {
+                width: 180px;
+                align-self: center;
+        }
+        }
+    }
+}

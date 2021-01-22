@@ -1,0 +1,20 @@
+## в каком окружении все будет запускаться
+image: node:12.16.2
+
+## pages – название процесса, потом увидим его в интерфейса
+pages:
+
+  stage: deploy
+
+  script:
+    - npm install -g gatsby-cli
+    - npm run server:install
+    - npm run client:install
+
+    - npm run start
+
+
+  only:
+    - master
+
+

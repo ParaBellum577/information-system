@@ -1,0 +1,316 @@
+.block {
+    width: 80%;
+    max-width: 940px;
+    height: 860px;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    animation: fadein 0.6s ease-in-out;
+    > div {
+        display: flex;
+        width: 100%;
+    }
+    .buttons {
+        margin-top: 40px;
+        display: flex;
+        justify-content: space-between;
+    }
+}
+.main {
+    height: 100vh;  
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: url(../../../style/img/back.jpg);
+    // background-color: rgba(255,255,255,0.86);
+    // background-blend-mode: lighten;
+    &::before {
+        content: '';
+        width: 100%;
+        position: absolute;
+        left: 0;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        background-color: rgba(255, 255, 255, 0.9); 
+      }
+      > form {
+          z-index: 3;
+      }
+}
+
+.firstStep {
+    > h2 {
+    }
+    > div > textarea {
+        width: 100%;
+        text-align: left;
+        resize: vertical;
+        min-height: 70px;
+        padding: 12px;
+        outline: none;
+        width: 100%;
+        font-size: 1rem;
+        color: #000000;
+        font-family: 'Raleway', sans-serif;
+        border: 1px solid rgb(177, 185, 196);
+        border-radius: 4px;
+        background-color: rgb(255, 255, 255);
+        margin-top: 0px;
+        margin-bottom: 0px;
+        height: 70px;
+    }
+    .inputFirst {
+        > input {
+            width: 50%;
+            &:first-child {
+                margin-right: 50px;
+            }
+        }
+    }
+    .periodBlock {
+        margin-top: 40px;
+        > div:first-child {
+            width: 80%;
+        }
+    }
+}
+.inputs {
+    margin-top: 40px;
+    > input {
+        width: 100%;
+    }
+}
+
+.secondStep {
+    > div {
+        margin-top: 30px;
+        > input {
+            width: 100%;
+            &:nth-child(2) {
+                margin-left: 40px;
+            }
+        }
+    }
+}
+.thirdStep {
+    .socialGroup {
+        > div {
+            flex-direction: column;
+            width: 50%;
+            &:first-child {
+                margin-right: 20px;
+            }
+            > div {
+                display: flex;
+                align-items: center;
+                margin-bottom: 10px;
+                > img {
+                    width: 36px;
+                    height: 36px;
+                }
+                > input {
+                    margin-left: 15px;
+                    width: 100%;
+                }
+            }
+        }
+    }
+    > div {
+        display: flex;
+        margin-top: 20px;
+    }
+}
+.contacts {
+    display: flex;
+    flex-direction: column;
+
+    > div {
+        &:last-child {
+            display: flex;
+            margin-top: 20px;
+            width: 100%;
+            > input {
+                width: 50%;
+                margin-left: 40px;
+            }
+        }
+    }
+}
+.doubleInp {
+    > div {
+        &:last-child {
+            width: 30%;
+            margin-left: 40px;
+        }
+        width: 70%;
+    }
+}
+.mt {
+    margin-top: 40px;
+}
+
+.singleInp {
+    > span {
+        width: 80%;
+        display: flex;
+        align-items: center;
+    }
+    > div {
+        width: 20%;
+        margin-left: 20px;
+   }
+}
+.blockMar {
+    > div:last-child {
+        margin-left: 40px;
+    }
+}
+.mailBlock {
+    > div:last-child {
+        margin-top: 0;
+    }
+}
+.dynamicInpuys {
+    width: 100%;
+    > div {
+        display: flex;
+        align-items: center;
+    }
+}
+.buttonGroup {
+    width: 5%;
+    > img {
+        margin-left: 20px;
+        width: 20px;
+        height: 20px;
+        cursor: pointer;
+    }
+}
+@keyframes fadein {
+    from { 
+        // transform: translateX(100%);
+        transform: scale(0.2);
+        opacity: 0;
+    }
+    70% {
+        // transform: translateX(-8%);
+        transform: scale(1.1);
+
+    }
+    to { 
+        // transform: translateX(0);
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+// @keyframes fadeout {
+//     from { 
+//         transform: translateX(-100%);
+//         opacity: 0;
+//     }
+//     70% {
+//         transform: translateX(8%);
+//         }
+//     to { 
+//         transform: translateX(0);
+//         opacity: 1;
+//     }
+// }
+
+@media only screen and (max-width: 968px) {
+ .periodBlock {
+     > div:last-child {
+         display: none;
+     }
+     > div:first-child {
+         width: 100% !important;
+         > div {
+            justify-content: space-between;
+         }
+     }
+ }
+ .block {
+    > div:nth-child(2) {
+        margin: 0;
+    }
+    > h2 {
+        font-size: 20px;
+    }
+ }
+ .dynamicBlock {
+     flex-direction: column;
+     > div:last-child {
+        margin-left: 0;
+     }
+ }
+}
+
+@media only screen and (max-width: 617px) {
+    .block {
+        height: auto;
+        width: 90%;
+        padding: 10px;
+        margin-top: 40px;
+        > div {
+            > h2 {
+                font-size: 20px;
+            }
+        }
+    }
+    .main {
+        height: auto;
+    }
+    .inputFirst {
+        display: flex;
+        flex-direction: column;
+    }
+    .blockMar {
+        > div:last-child {
+            margin-left: 0;
+        }
+    }
+    .periodBlock {
+
+        > div {
+            > div {
+                flex-direction: column;
+                > div {
+                    width: 100%; 
+                }
+            }
+        }
+    }
+}
+@media only screen and (max-width: 455px) {
+    .mediaGroup {
+        flex-direction: column;
+        > div {
+            width: 100% !important;
+            margin-left: 0 !important   ;
+        }
+    }
+    .mailBlock {
+        flex-direction: column;
+        > div {
+            width: 100%;
+            margin-bottom: 20px;
+        }
+    }
+}
+
+@media only screen and (max-width: 407px) {
+    .buttons {
+        > button {
+            width: 100px;
+        }
+    }
+    .singleInp {
+        > span {
+            font-size: 14px;
+        }
+    }
+}

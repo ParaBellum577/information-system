@@ -1,0 +1,205 @@
+.cabHeader {
+    position: fixed;
+    width: calc(100% - 300px);
+    top: 0;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    height: 60px;
+    padding-right: 50px;
+    padding-left: 50px;
+    background-color: #ffffff;
+    // box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    border-bottom: 1px solid #dde1e7;
+    > svg {
+        width: 42px;
+        margin-right: 50px;
+        cursor: pointer;
+        transition: all 0.2s ease-in-out;
+        &:hover {
+            transform: scale(1.2);
+            color: #1991eb;
+        }
+        &:active {
+            transform: scale(0.8);
+        }
+    }
+    > button {
+        margin-right: 20px;
+    }
+    .stName {
+        border: 1px solid;
+        border-radius: 50%;
+        width: 35px;
+        height: 35px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        &:hover {
+            background-color: #a1ccff;
+            color: #ffffff;
+        }
+    }
+    > div {
+        margin-left: 20px;
+    }
+}
+.profileHeader {
+    display: flex;
+    align-items: center;
+    .headerName {
+        > span {
+            font-size: 16px;
+            color: #353d46;
+            letter-spacing: -0.01em;
+            font-weight: 600;
+            line-height: 24px;
+            text-align: left;
+        }
+        > div {
+            font-size: 12px;
+            font-weight: 600;
+            color: #1991eb;
+            text-align: left;
+            letter-spacing: 0.03em;
+            line-height: 20px;
+            cursor: pointer;
+        }
+        
+    }
+    .profileHeaderAvatar {
+        border: 1px solid;
+        border-radius: 50%;
+        width: 35px;
+        height: 35px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-right: 20px;
+    }
+}
+.popoverProfile {
+    width: 300px;
+    .popoverHeader {
+        transition: all 0.3s ease-in-out;
+        &:hover {
+            background-color: #e6e4e4;
+            cursor: pointer;
+        }
+    }
+    .popoverBody {
+        padding: 0;
+        ul {
+            width: 100%;
+            margin: 0;
+            > li {
+                display: flex;
+                align-items: center;
+                height: 44px;
+                list-style: none;
+                width: 100%;
+                padding: 0 12px;
+                cursor: pointer;
+                transition: all 0.3s ease-in-out;
+                &:last-child {
+                    margin-bottom: 0;
+                }
+                &:hover {
+                    background-color: #eff1f2;
+                }
+                > div {
+                    font-weight: 600;
+                    font-size: 14px;
+                    align-self: center;
+                    color: #48555e;
+                    > svg {
+                        margin-left: 20px;
+                    }
+                }
+            }
+        }
+    }
+}
+.logOut {
+    border-top: 1px solid #dedede;
+    > div {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &:hover {
+    > div {
+        color: #1991eb !important;
+    }
+}}
+.item {
+    width: 100%;
+    min-height: 200px;
+    padding: 20px;
+    margin-top: 20px;
+    position: relative;
+    background-color: #E0F4FF;
+    border: 2px solid #30B4AE;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: all 1s ease-in-out;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    > svg {
+        position: absolute;
+        top: 12px;
+        right: 24px;
+        cursor: pointer;
+    }
+    > button {
+        align-self: flex-end;
+        width: 180px;
+    }
+}
+.form {
+    width: 100%;
+}
+.iconHome {
+      display: none;
+}
+
+@media screen and (max-width: 649px) { 
+ .iconHome {
+     height: 35px;
+    display: block;
+ }
+ .cabHeader {
+     padding: 0 12px;
+     justify-content: space-between;
+     > svg {
+         margin: 0;
+     }
+     > button {
+         display: none;
+     }
+ }
+ .item {
+     > h5 {
+         font-size: 18px;
+     }
+    > p {
+        font-size: 14px;
+    }
+ }
+}
+@media screen and (max-width: 290px) { 
+    .item button{
+        width: 120px;
+        font-size: 13px; 
+    }
+}
+@media screen and (max-width: 1046px) { 
+    .cabHeader {
+        position: fixed;
+        width: calc(100%);
+    }
+}

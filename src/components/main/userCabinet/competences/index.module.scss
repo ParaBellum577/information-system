@@ -1,0 +1,198 @@
+.competenceHeader {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 4px 28px 4px;
+    background: #fff;
+    margin: -14px -28px 14px;
+    border-bottom: 1px solid #dfe3e9;
+    position: fixed;
+    top: 118px;
+    height: 50px;
+    width: 100vw;
+    z-index: 2;
+    border-top: 1px solid #dde1e7;
+    > button {
+        width: 238px;
+        height: 32px;
+        margin-left: 20px;
+    }
+}
+.competenceContent {
+    padding-top: 24px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.competenceItem {
+    min-width: 480px;
+    width: calc(50% - 20px);
+    padding: 20px;
+    .competenceItemInfoContent {
+        .competenceItemInfoHeader {
+            border-bottom: 1px solid #dfe3e9;
+            padding-bottom: 10px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            > svg {
+                cursor: pointer;
+                transition: all .2s ease-in-out;
+                &:hover {
+                    color: #e65858;
+                }
+            }
+            > div {
+                display: flex;
+                align-items: center;
+                > h5 {
+                    color: #7f8fa4;
+                    font-weight: bold;
+                    font-size: 18px;
+                    margin: 0;
+                }
+                > div {
+                    > svg {
+                        color: #7f8fa4;
+                        cursor: pointer;
+                        transition: all .2s ease-in-out;
+                        margin-left: 20px;
+                        &:hover {
+                            color: #1991eb;
+                        }
+                    }
+                }
+            }
+        }
+        > div {
+            display: flex;
+            margin-bottom: 10px;
+            > span {
+                font-size: 14px;
+                font-weight: 600;
+                color: #48555e;
+                margin-right: 20px;
+            }
+            > div {
+                > p {
+                    color: #7f8fa4;
+                    font-size: 12px;
+                    font-weight: 600;
+                    margin: 0;
+                }
+            }
+            > p {
+                color: #7f8fa4;
+                font-size: 12px;
+                font-weight: 600;
+                margin: 0;
+            }
+        }
+    }
+}
+.daysOfWeek {
+    margin-right: 10px;
+    > p {
+        color: #48555e !important;
+    }
+}
+.loader {
+    min-height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.competenceItem {
+    border: 1px solid #ccd4e4;
+    margin: 0 10px 10px;
+    background-color: #fff;
+    border-radius: 4px;
+    transition: all 0.3s ease-in-out
+}
+.competenceItemInfoButtons {
+    margin-top: 20px;
+    > button {
+        width: 204px;
+        height: 32px;
+    }
+}
+
+.createLaboratory {
+    width: 520px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    > button {
+        margin-top: 20px;
+        align-self: flex-end;
+    }
+}
+.createLaboratoryHead {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    > span {
+        width: 80%;
+        color: #7f8fa4;
+        font-weight: bold;
+        font-size: 18px;
+    }
+    > p {
+        margin: 0;
+        width: 20%;
+        color: #7f8fa4;
+        font-weight: bold;
+        font-size: 18px;
+    }
+}
+
+.changeName {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    // align-items: center;
+    box-shadow: #48555e 0px 6px 12px 0px;
+    > h5 {
+        font-size: 16px;
+        font-weight: 600;
+        color: #48555e;
+    }
+   > div {
+        > input {
+            border: 1px solid #c3c9d4;
+            padding: 6px 8px 6px 2px;
+            border-radius: 4px;
+            background-color: white;
+            color: #31363d;
+            font-size: 13px;
+            font-weight: 600;
+            width: 210px;
+            transition: 0.3s;
+            height: 32px;
+            outline: none;
+            &:focus {
+                padding: 5px 7px 5px 10px;
+                border: 2px solid #1991eb;
+                box-shadow: 0 0 5px #1991eb;
+            }
+        }
+        > button {
+            width: 78px;
+            height: 32px;
+            margin-left: 20px;
+        }
+    }
+}
+@media screen and (max-width: 1374px) { 
+    .competenceItem {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 578px) { 
+       .competenceItem {
+           min-width: auto;
+       }
+}

@@ -1,0 +1,122 @@
+.modalConfirm {
+    max-width: 700px;
+    width: 700px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    > h5 {
+        font-size: 28px;
+        font-weight: 500;
+    }
+    > p {
+        margin-bottom: 20px;
+    }
+}
+
+.modalFeedBack {
+    max-width: 770px;
+    padding: 46px;
+    width: 770px;
+    height: 440px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    .inputGroup {
+        > input {
+            width: 50%;
+            &:first-child {
+                margin-right: 20px;
+            }
+        }
+    }
+    > div {
+        width: 100%;
+        margin-bottom: 20px;
+        display: flex;
+        align-items: flex-start;
+        > input {
+            width: 100%;
+        }
+    }
+    > h5 {
+        font-size: 28px;
+        font-weight: 500;
+    }
+}
+.loginPopUp {
+    width: 540px;
+    height: 476px;
+    padding: 46px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 0;
+    > button {
+        align-self: flex-end;
+    }
+    > div {
+        > div {
+            position: relative;
+            > img {
+                position: absolute;
+                top: 18px;
+            }
+        }
+        > h5 {
+            font-size: 28px;
+            font-weight: 500;
+            padding-bottom: 20px;
+        }
+        width: 100%;
+        > div {
+            margin-bottom: 20px;
+            margin-top: 20px;
+        }
+    }
+}
+.hidePsw {
+    top: 62px;
+    right: 24px;
+    position: absolute;
+    cursor: pointer;
+    filter: invert(50%);
+
+    &:hover {
+        filter: invert(100%);
+    }
+}
+.password {
+    position: relative;
+    > img {
+        position: absolute;
+        top: 12px;
+    }
+}
+
+.errorMessage {
+    color: #ed1d41;
+    font-size: 13px;
+}
+
+@media only screen and (max-width: 620px) {
+    .loginPopUp {
+        width: 400px;
+    }
+}
+
+@media only screen and (max-width: 445px) {
+    .loginPopUp {
+        padding: 12px;
+        width: 300px;
+    }
+}
+
+@media only screen and (max-width: 345px) {
+    .loginPopUp {
+        
+        width: 200px;
+    }
+}

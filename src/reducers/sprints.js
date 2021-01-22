@@ -1,0 +1,18 @@
+import { GET_ALL_SPRINTS_BY_PROJECT } from '../actions/types';
+ 
+const initialState = {
+  currentSprints: [],
+}
+
+export default (state = initialState, action) => {
+  switch (action.type) {
+    case GET_ALL_SPRINTS_BY_PROJECT:
+      return {
+        ...state,
+        currentSprints: action.payload,
+      };
+    default:
+      return state;
+  }
+};
+  

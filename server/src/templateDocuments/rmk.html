@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <mate charest="utf-8"/>
+  <title>Document</title>
+
+</head>
+<body>
+  <p>Індекс документу:{{index}}  Дата створення: {{createdAt}}</p>
+  <p>Зміст: {{content}}</p>
+  <p>Вид наказу: {{orderType}}</p>
+  <p>Склад документу: {{documentComposition}}</p>
+  <p>Групи доступу</p>
+  <ul>
+    {{#each accessGroup}}
+      <li>{{this}}</li>
+    {{/each}}
+  </ul>
+  Назва документу: {{nameDocument}}
+  Статус документу: {{statusDocument}}
+
+  <p>Дата закінчення дії документу: {{expirationDate}}</p>
+  <p>Дата закриття документу: {{exitDate}}</p>
+  <p>Автор версії: {{authorVersion}}</p>
+  <p>Ініціатор закриття документу: {{initiatorClosingDocument}}</p>
+  {{#if relatedDocuments}}
+    <ul>
+      {{#each relatedDocuments}}
+        <li>{{this}}</li>
+      {{/each}}
+    </ul>
+  {{/if}}
+
+</body>
+</html>

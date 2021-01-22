@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 53.2 (72643) - https://sketchapp.com -->
+    <title>Icon/s/arrow-down/gray</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linejoin="round">
+        <g id="0099.-SignUp-#01" transform="translate(-1858.000000, -35.000000)" stroke="#A9B4BD" stroke-width="1.5">
+            <g id="Close-button" transform="translate(1844.000000, 24.000000)">
+                <g id="close-button">
+                    <g id="Icon/s/arrow-down/gray" transform="translate(14.000000, 11.000000)">
+                        <g id="icon" transform="translate(6.000000, 6.000000)">
+                            <g id="Group">
+                                <polyline id="path" transform="translate(6.000000, 3.000000) rotate(-270.000000) translate(-6.000000, -3.000000) " points="3 -3 9 3 3 9 3 9"></polyline>
+                                <polyline id="path" transform="translate(6.000000, 9.000000) rotate(-90.000000) translate(-6.000000, -9.000000) " points="3 3 9 9 3 15 3 15"></polyline>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

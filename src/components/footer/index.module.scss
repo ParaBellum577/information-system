@@ -1,0 +1,195 @@
+.footer {
+    // background-color: #39403f;
+    // background-image: linear-gradient(to bottom, rgba(41, 137, 216, 0) 0, rgba(15, 51, 80, 0) 63%, rgba(2, 7, 11, 0.3) 85%, rgba(0, 0, 0, 0.5) 100%);
+    // height: 450px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .footerLogoBack {
+        background-image: url(../style/footer.png);
+        background-color: #003E88;
+        background-position: bottom;
+        background-repeat: no-repeat;
+        background-size: 100%;
+        width: 100%;
+        height: 334px;
+        border-bottom: 20px solid #9BBB59;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+    }
+    .footerContent {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 80%;
+        margin: 0 auto;
+        max-width: 1470px;
+        color: #ffffff;
+        .footerInfo {
+            width: 50%;
+            display: flex;
+            > div {
+                width: 44%;
+                > span {
+                    font-size: 26px;
+                    font-weight: 600;
+                }
+                }
+            }
+        }
+}
+.whiteBack {
+    height: 258px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    background-color: #ffffff;
+    > div {
+        width: 80%;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        > img {
+            max-width: 100%;
+        }
+    }
+}
+.rights {
+    margin: 20px;
+    color: #afacac;
+}
+.infoElements {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    > a {
+        color: #fff;
+        font-size: 16px;
+        width: auto;
+        height: 20px;
+        margin-bottom: 10px;
+        cursor: pointer;
+        text-decoration: none;
+        &:hover {
+            color: #fff;
+            text-decoration: underline;
+        }
+    }
+}
+.infoElementsMarg {
+    margin-top: 47px;
+    > div {
+        &:hover {
+            text-decoration: underline;
+            cursor: pointer;
+        }
+    }
+}
+.links {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: flex-end;
+    min-width: 170px;
+    > a, div {
+        font-size: 16px;
+        font-weight: 600;
+        text-decoration: none;
+        color: #ffffff;
+        cursor: pointer;
+        height: 25px;
+        &:hover {
+            border-bottom: 1px solid #ffffff;
+        }
+    }
+}
+
+.social {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+    .europeanUnion {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        margin-bottom: 25px;
+        > span {
+            font-size: 12px;
+            font-weight: 600;
+            color: #ffffff;
+        }
+        > img {
+            width: 200px;
+            height: 94px;
+            margin-bottom: 20px;
+        }
+    }
+    > a {
+        font-size: 14px;
+        text-decoration: none;
+        color: #ffffff;
+        margin-top: 10px;
+        height: 20px;
+        &:hover {
+            border-bottom: 1px solid #ffffff;
+        }
+    }
+    > div {
+        > a {
+            margin-right: 10px;
+        }
+    }
+}
+
+
+@media only screen and (max-width: 1000px) {
+    .whiteBack {
+        height: 480px;
+        > div {
+            width: 90%;
+            flex-wrap: wrap;
+            justify-content: center;
+            > img {
+                margin: 10px;
+            }
+        }
+    }
+    .footerInfo {
+        width: 100% !important;
+    }
+    .social {
+        width: 0;
+    }
+}
+
+@media only screen and (max-width: 619px) {
+    .whiteBack {
+        height: 680px;
+        > div {
+            width: 90%;
+            flex-wrap: wrap;
+            justify-content: center;
+            > img {
+                margin: 10px;
+            }
+        }
+    }
+    .footerInfo {
+        > div {
+            width: 50% !important;
+            }
+     }
+     .infoElements {
+         > div {
+            font-size: 13px;
+         }
+     }
+     .footerContent {
+         width: 90% !important;
+     }
+}

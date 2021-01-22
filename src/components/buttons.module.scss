@@ -1,0 +1,82 @@
+$input-color: #3f51b5;
+$white-text: #fff;
+$button-primary: #1991eb;
+$button-active-opacity: rgba(25, 145, 235, 0.12);
+$button-primary-hov: #48adfa;
+$blue-button: #f2f9ff;
+$error-button: #ef5350;
+$error-button-hover: #ff6c6a;
+
+.buttonSignIn {
+    width: 140px;
+    height: 40px;
+    margin-right: 12px;
+    font-weight: bold;
+    font-size: 16px;
+    font-family: 'Open Sans', sans-serif;
+    color: $white-text;
+    border: 2px solid $button-primary;
+    border-radius: 4px;
+    background-color: $button-primary;
+    outline: none !important;
+    cursor: pointer;
+    transition: all .25s ease-in-out;
+    &:hover {
+        background-color: $button-primary-hov;
+    }
+
+    &:active {
+        background-color: $button-active-opacity;
+    }
+}
+
+
+.buttonConfirm {
+    width: 140px;
+    height: 40px;
+    font-weight: bold;
+    font-size: 16px;
+    font-family: 'Open Sans', sans-serif;
+    color: $button-primary;
+    border: 2px solid $button-primary;
+    border-radius: 4px;
+    background-color: #ffff;
+    outline: none !important;
+    cursor: pointer;
+    transition: all .25s ease-in-out;
+    &:hover {
+        background-color: $blue-button;
+    }
+    &:active {
+        background-color: $button-active-opacity;
+        outline: none;
+
+    }
+}
+
+.cancelButton {
+    width: 140px;
+    height: 40px;
+    margin-right: 12px;
+    font-weight: bold;
+    font-size: 16px;
+    font-family: 'Open Sans', sans-serif;
+    color: $white-text;
+    border: 2px solid $error-button;
+    border-radius: 4px;
+    background-color: $error-button;
+    outline: none !important;
+    cursor: pointer;
+    transition: all .25s ease-in-out;
+    &:hover {
+        background-color: $error-button-hover;
+    }
+}
+
+ 
+@media screen and (max-width: 480px) {
+    .buttonSignUp, .buttonSignUpBig, .cancelButton {
+        height: 60px;
+        width: 270px;
+    }
+}

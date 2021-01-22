@@ -1,0 +1,120 @@
+.compose {
+  padding: 10px;
+  background: white;
+  border-top: 1px solid #eeeef1;
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  /* height: 80px; */
+  border-top: 1px solid #e6e6e6 !important;
+}
+
+@supports (backdrop-filter: blur(20px)) {
+  .compose {
+    border: none;
+    background-color: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(20px);
+  }
+}
+.compose-send-button {
+  display: none;
+}
+.compose-input {
+  flex: 1;
+  border: none;
+  font-size: 14px;
+  height: 40px;
+  background: none;
+  border: 1px solid #000;
+    border-radius: 8px;
+    padding: 10px;
+}
+.compose-form {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0;
+}
+.compose-form svg:hover {
+  cursor: pointer;
+  fill: #30B4AE;
+  transition: all .2s ease-in-out;
+}
+.compose-form input {
+  margin-right: 20px;
+  outline: none;
+}
+
+.compose-form button{
+  margin: 0;
+  margin-left: 20px;
+  background-color: #30B4AE;
+  border: 2px solid #30B4AE;
+  outline: none;
+}
+
+.compose-form button:hover{
+  background-color: #46d2cb;
+}
+
+.compose-input::placeholder {
+  opacity: 0.3;
+}
+
+.compose .toolbar-button {
+  color: #bbbbbf;
+  margin-left: 15px;
+}
+.selected-block {
+  display: flex;
+  flex-direction: column;
+}
+.preview-files-hidden {
+  position: relative;
+  height: 0px;
+  margin-bottom: 20px;
+  transition: all .3s ease-in-out;
+  transform: translateX(-100%);
+  opacity: 0;
+}
+.preview-files-active {
+  position: relative;
+  height: 100px;
+  margin-bottom: 20px;
+  transition: all .3s ease-in-out;
+  transform: translateX(0);
+  opacity: 1;
+}
+.preview-files-active img {
+  height: 100%;
+}
+
+.close-icon {
+  position: absolute;
+  cursor: pointer;
+  top: -4px;
+  left: 180px;
+}
+.doc-icon {
+  color: #30B4AE;
+}
+.compose .toolbar-button:hover {
+  color: #99999c;
+}
+
+@media only screen and (max-width: 1172px) {
+  .compose-send-button {
+    display: block;
+    margin-left: 20px;
+  }
+  .compose-form button{
+    display: none;
+  }
+}
+@media only screen and (max-width: 904px) {
+  .messenger {
+    grid-template-columns: 230px auto !important;
+  }
+}
